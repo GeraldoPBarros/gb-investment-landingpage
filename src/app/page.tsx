@@ -153,7 +153,7 @@ export default function Home() {
 
           <div className="mt-6 md:mt-0">
             <p className="text-gray-500 text-sm">
-              © 2023 Investment Wallet. All rights reserved.
+              © 2025 Geraldo Barros. All rights reserved.
             </p>
           </div>
         </div>
