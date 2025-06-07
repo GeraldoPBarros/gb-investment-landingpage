@@ -1,4 +1,4 @@
-import { TempoInit } from "@/components/tempo-init";
+import { TempoInit } from "./components/tempo-init/TempoInit";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tempo - Modern SaaS Starter",
-  description: "A modern full-stack starter template powered by Next.js",
+  title: "Investment Wallet",
+  description: "A modern full-stack starter landing page powered by Next.js",
 };
 
 export default function RootLayout({
