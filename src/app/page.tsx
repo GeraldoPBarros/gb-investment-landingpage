@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import HeroSection from "./components/hero-section/HeroSection";
 import FeatureCards from "./components/feature-cards/FeatureCards";
 import DataVisualization from "./components/data-visualization/DataVisualization";
+import TrustSection from "./components/trust-section/TrustSection";
 
 export default function Home() {
   return (
@@ -53,7 +54,25 @@ export default function Home() {
         </div>
       </motion.section>
 
-      
+      {/* Trust Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-950 to-black"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            Bank-Level Security
+          </h2>
+          <p className="text-gray-400 text-center max-w-3xl mx-auto mb-16">
+            Your financial data is protected with the most advanced encryption
+            and security protocols available.
+          </p>
+          <TrustSection />
+        </div>
+      </motion.section>
     </main>
   );
 }
