@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import HeroSection from "./components/hero-section/HeroSection";
 import FeatureCards from "./components/feature-cards/FeatureCards";
+import DataVisualization from "./components/data-visualization/DataVisualization";
 
 export default function Home() {
   return (
@@ -31,6 +32,27 @@ export default function Home() {
           <FeatureCards />
         </div>
       </motion.section>
+
+      {/* Data Visualization Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-900 to-gray-950"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            Real-Time Portfolio Insights
+          </h2>
+          <p className="text-gray-400 text-center max-w-3xl mx-auto mb-16">
+            Visualize your investments with powerful, interactive charts that
+            help you make informed decisions.
+          </p>
+          <DataVisualization />
+        </div>
+      </motion.section>
+
       
     </main>
   );
